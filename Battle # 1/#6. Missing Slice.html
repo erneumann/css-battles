@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #E3516E;
+      display: grid;
+      place-items: center;
+      height: 95%;
+    }
+  
+    .wrap {
+      width: 200px;
+      height: 200px;
+      background: #E3516E;
+      clip-path: circle(50%);
+    }
+  
+    .wrap>div,
+    .wrap>div:before,
+    .wrap>div:after {
+      position: absolute;
+      height: 100px;
+      aspect-ratio: 1;
+      content: '';
+    }
+  
+    .wrap>div {
+      background: #51B5A9;
+    }
+  
+    .wrap>div:before {
+      background: #FADE8B;
+      margin-left: 100px;
+    }
+  
+    .wrap>div:after {
+      background: #F7F3D7;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div></div>
+  </div>
+  
+</body>
+</html>
