@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background: #191210;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #c {
+        width: 100px;
+        height: 100px;
+        border: 20px solid #eca03d;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #c:before {
+        content: "";
+        width: 60;
+        height: 60;
+        position: absolute;
+        border: 20px solid transparent; /* Set the top border to transparent */
+        border-bottom-color: #eca03d;
+        border-right-color: #eca03d;
+        left: 50;
+        border-radius: 100%;
+        rotate: 45deg;
+      }
+
+      #c:after {
+        content: "";
+        position: absolute;
+        right: 50;
+        border: 20px solid transparent;
+        border-top-color: #eca03d;
+        border-left-color: #eca03d;
+        border-radius: 100%;
+        rotate: 45deg;
+        width: 60px;
+        height: 60px;
+      }
+
+      #c2 {
+        width: 50;
+        height: 50;
+        background: #84271c;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="c">
+      <div id="c2"></div>
+    </div>
+  </body>
+</html>
