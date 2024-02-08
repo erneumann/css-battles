@@ -1,0 +1,39 @@
+<style>
+  body {
+    background: #62306d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    height: 100;
+  }
+
+  #l {
+    background: #f7ec7d;
+    width: 140;
+  }
+
+  #l:before {
+    content: "";
+    display: block;
+    width: 40;
+    height: 40;
+    background: #62306d;
+    border-radius: 50%;
+    position: relative;
+    right: 20;
+    bottom: 20;
+    box-shadow: 200px 0px #62306d, 0px 100px #62306d, 200px 100px #62306d,
+      140px 0px 0px -10px #62306d, 140px 100px 0px -10px #62306d;
+  }
+
+  #r {
+    background: #e38f66;
+    width: 60;
+  }
+</style>
+
+<div id="l"></div>
+<div id="r"></div>

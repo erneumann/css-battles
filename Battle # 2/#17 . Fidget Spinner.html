@@ -1,0 +1,50 @@
+<style>
+  body {
+    background: #09042a;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    border-radius: 50%;
+    width: 60;
+    height: 60;
+  }
+
+  #t,
+  #b {
+    grid-column-start: 2;
+    background: #f5bb9c;
+    transform: translateY(42px);
+    box-shadow: 0px 0px 0px 10px #09042a;
+  }
+
+  #b {
+    transform: translateY(-42px);
+  }
+
+  #ml,
+  #m,
+  #mr {
+    grid-row-start: 2;
+  }
+
+  #ml,
+  #mr {
+    box-shadow: 0px 0px 0px 10px #e78481;
+    background: #09042a;
+  }
+
+  #m {
+    background: #e78481;
+    transform: scale(1.4);
+    z-index: -1;
+  }
+</style>
+
+<div id="t"></div>
+<div id="ml"></div>
+<div id="m"></div>
+<div id="mr"></div>
+<div id="b"></div>

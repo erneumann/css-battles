@@ -1,0 +1,63 @@
+<style>
+  body {
+    background: #1a4341;
+  }
+  div {
+    position: absolute;
+    border-radius: 50%;
+    background: #998235;
+    width: 50;
+    height: 50;
+    bottom: 90;
+  }
+  #c1 {
+    left: 140;
+  }
+  #c2 {
+    left: 210;
+    background: #f3ac3c;
+  }
+  #u1 {
+    right: 70;
+    border-radius: 0 0 50% 50%;
+  }
+  #u2 {
+    left: 70;
+    background: #f3ac3c;
+    border-radius: 0 0 50% 50%;
+  }
+  #c1:after,
+  #u1:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -70;
+    left: -70;
+    width: 50;
+    height: 50;
+    background: #998235;
+    border-radius: 50%;
+  }
+  #u1:after {
+    border-radius: 50% 50% 0 0;
+  }
+  #c2:after,
+  #u2:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -70;
+    left: 70;
+    width: 50;
+    height: 50;
+    background: #f3ac3c;
+    border-radius: 50%;
+  }
+  #u2:after {
+    border-radius: 50% 50% 0 0;
+  }
+</style>
+<div id="c1"></div>
+<div id="c2"></div>
+<div id="u1"></div>
+<div id="u2"></div>
